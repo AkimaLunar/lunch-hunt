@@ -1,0 +1,31 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.votes {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__count {
+    color: transparentize($color-primary, .25);
+    font-weight: $font-weight-bold;
+    margin:0;
+  }
+  &__button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+  }
+  &__text {
+    color: $color-medium-grey;
+    text-align: center;
+    line-height: 1;
+    span {
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      font-size: .75rem;
+    }
+  }
+}

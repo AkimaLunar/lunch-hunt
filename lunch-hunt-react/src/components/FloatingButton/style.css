@@ -1,0 +1,28 @@
+.floatingButton {
+  position: fixed;
+  z-index: 10;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 50%;
+  height: 4.25rem;
+  width: 4.25rem;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #77abff;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45); }
+  .floatingButton:hover, .floatingButton:focus {
+    background-color: #aacbff; }

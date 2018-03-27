@@ -1,0 +1,9 @@
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: .75rem 0; }
+  .comment__text {
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0; }

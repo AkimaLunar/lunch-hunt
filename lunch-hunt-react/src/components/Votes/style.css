@@ -1,0 +1,23 @@
+.votes {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .votes__count {
+    color: rgba(94, 5, 183, 0.75);
+    font-weight: 900;
+    margin: 0; }
+  .votes__button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer; }
+  .votes__text {
+    color: #8e8c99;
+    text-align: center;
+    line-height: 1; }
+    .votes__text span {
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: .75rem; }

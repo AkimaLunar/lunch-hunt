@@ -1,0 +1,23 @@
+@import '../../styles/_buttons';
+@import '../../styles/_grid';
+@import '../../styles/_typography';
+
+.footer {
+  height: 8rem;
+  padding: $container-padding;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    width: 100%;
+    margin: .5rem 0;
+    text-align: center;
+    color: rgba(255,255,255,.75);
+  }
+  a {
+    @extend %button;
+    width: 100%;
+
+  }
+}

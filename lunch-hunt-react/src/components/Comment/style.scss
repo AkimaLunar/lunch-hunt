@@ -1,0 +1,14 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: .75rem 0;
+  &__text {
+    color: transparentize(#fff, .25);
+    margin:0;
+  }
+}

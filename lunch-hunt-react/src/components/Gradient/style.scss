@@ -1,0 +1,12 @@
+@import '../../styles/colors';
+
+.gradient {
+  background: $color-secondary;
+  background: -webkit-linear-gradient(to top, $color-secondary, adjust-hue($color-secondary, -85));
+  background: linear-gradient(to top, $color-secondary, adjust-hue($color-secondary, -85));
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}

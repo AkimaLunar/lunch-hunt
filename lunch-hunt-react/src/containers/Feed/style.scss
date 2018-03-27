@@ -1,0 +1,15 @@
+@import '../../styles/_grid';
+
+.feed {
+  padding: $container-padding;
+
+  &__error {
+    min-height: 60vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+}

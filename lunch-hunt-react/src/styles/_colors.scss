@@ -1,0 +1,57 @@
+// Theme Colors
+$color-purple: #5e05b7;
+$color-lemoncurd: #fffacd;
+$color-raspberry: #EF4E78;
+$color-icicle: #77abff;
+
+$theme-colors: (
+  primary: $color-purple,
+  secondary: $color-raspberry,
+  dark: $color-purple,
+  light: $color-lemoncurd,
+  bg: $color-raspberry
+);
+
+$color-primary: map-get($theme-colors, primary);
+$color-secondary: map-get($theme-colors, secondary);
+$color-dark: map-get($theme-colors, dark);
+$color-light: map-get($theme-colors, light);
+$color-alt: $color-icicle;
+
+// UI Colors
+$vista: #79d1ad;
+$mandy: #e67478;
+$apricot: #ed8864;
+$eastside: #9279c3;
+$ui-colors: (
+  default : $color-primary,
+  success : $vista,
+  error : $mandy,
+  warning : $apricot,
+  info : $eastside
+);
+
+$color-default: map-get($ui-colors, default);
+$color-success: map-get($ui-colors, success);
+$color-error: map-get($ui-colors, error);
+$color-warning: map-get($ui-colors, warning);
+$color-info: map-get($ui-colors, info);
+
+// Grey Colors
+$grey-colors: (
+  x-light : #eeedf2,
+  light : #c4c2cc,
+  medium : #8e8c99,
+  dark : #525059,
+  x-dark : #232326
+);
+
+$color-x-dark-grey: map-get($grey-colors, x-dark);
+$color-dark-grey: map-get($grey-colors, dark);
+$color-medium-grey: map-get($grey-colors, medium);
+$color-light-grey: map-get($grey-colors, light);
+$color-x-light-grey: map-get($grey-colors, x-light);
+
+
+$base-background-color:  map-get($theme-colors, bg);
+$base-font-color: $color-dark-grey;

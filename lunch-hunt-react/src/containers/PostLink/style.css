@@ -1,0 +1,53 @@
+.postLink__input {
+  padding: 0 0 0 .5rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #5e05b7;
+  transition: all 150ms ease;
+  height: 3.8rem; }
+  .postLink__input:focus {
+    background-color: rgba(255, 255, 255, 0.75); }
+  .postLink__input::placeholder {
+    color: #fff; }
+
+.postLink__label {
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.postLink {
+  background-color: #5e05b7;
+  padding: 0 1rem; }
+  @media screen and (min-height: 460px) {
+    .postLink {
+      height: 100%; } }
+  .postLink__form {
+    padding-bottom: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    @media screen and (min-width: 42rem) {
+      .postLink__form {
+        justify-content: center;
+        width: 42rem;
+        margin: 0 auto; } }
+    .postLink__form button {
+      margin-top: 1rem; }
+  .postLink__heading {
+    font-size: 3rem;
+    line-height: 1;
+    color: #fffacd; }
+  .postLink__heading, .postLink__description {
+    color: rgba(255, 250, 205, 0.85); }
+  .postLink__label {
+    margin: .5rem 0; }
+  .postLink__input {
+    margin: .5rem 0;
+    min-height: 1rem; }
+  .postLink__buttonGroup {
+    display: flex;
+    flex-direction: row; }
+    .postLink__buttonGroup button.button__alt {
+      flex-grow: 2;
+      margin-left: 1rem; }

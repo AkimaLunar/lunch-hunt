@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.username {
+  font-weight: $font-weight-bold;
+  margin: 0;
+  &__light {
+    color: transparentize(#fff, .25);
+  }
+  &__dark {
+    color: $color-medium-grey;
+  }
+}

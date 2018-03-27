@@ -1,0 +1,36 @@
+@import '../../styles/_borders';
+@import '../../styles/_colors';
+@import '../../styles/transitions';
+@import '../../styles/typography';
+
+.floatingButton {
+  position: fixed;
+  z-index: 10;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 50%;
+  height: 4.25rem;
+  width: 4.25rem;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #fff;
+  background-color: $color-alt;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+  &:hover,
+  &:focus {
+    background-color: lighten($color-alt, 10%);
+  }
+}

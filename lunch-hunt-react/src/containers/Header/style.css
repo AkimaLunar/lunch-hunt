@@ -1,0 +1,16 @@
+.header {
+  padding: 0 1rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between; }
+  .header__buttonGroup {
+    display: flex;
+    height: 100%;
+    align-content: flex-end;
+    align-items: center; }
+    .header__buttonGroup:not(:first-child) button {
+      margin-left: 1rem; }
+    .header__buttonGroup p {
+      margin-right: 1rem; }

@@ -1,0 +1,41 @@
+@import '../../styles/_borders';
+@import '../../styles/_colors';
+@import '../../styles/forms';
+@import '../../styles/_grid';
+
+.signup {
+  background: transparentize($color-primary, .35);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  padding: $container-padding;
+  display: flow-root;
+
+  &__form {
+    margin: 2rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+      margin-top: 1rem;
+    }
+  }
+
+  &__label {
+    margin: .5rem 0;
+    @extend %label;
+  }
+  
+  &__input {
+    margin: .5rem 0;
+    @extend %input;
+  }
+  &__buttonGroup {
+    display: flex;
+    flex-direction: row;
+    & button.button__dark {
+      flex-grow: 2;
+      margin-left: 1rem;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.shell {
+  max-width: 42rem;
+  margin: 0 auto; }
+  @media screen and (min-width: 42rem) {
+    .shell {
+      background-color: rgba(255, 255, 255, 0.075); } }
+
+.shell {
+  min-height: 100vh; }
+  .shell__wrapper {
+    position: relative; }

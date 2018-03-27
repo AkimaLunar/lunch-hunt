@@ -1,0 +1,29 @@
+@import './borders';
+@import './colors';
+@import './transitions';
+@import './typography';
+
+%button {
+  border-radius: $base-border-radius;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  padding: $base-spacing;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: $color-primary;
+  background-color: transparentize(#fff, 0.85);
+  &:hover,
+  &:focus {
+    background-color: transparentize(#fff, 0.65);
+  }
+}

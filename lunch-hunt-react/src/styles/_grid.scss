@@ -1,0 +1,14 @@
+// Breakpoints
+$small-screen: 24rem;
+$medium-screen: 42rem;
+
+// Layout
+$container-width: $medium-screen;
+$container-padding: 0 1rem;
+%container {
+  max-width: $container-width;
+  margin: 0 auto;
+  @media screen and (min-width: $container-width) {
+    background-color: rgba(255,255,255,.075);
+  }
+}

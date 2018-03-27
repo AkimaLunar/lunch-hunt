@@ -1,0 +1,9 @@
+.gradient {
+  background: #EF4E78;
+  background: -webkit-linear-gradient(to top, #EF4E78, #824eef);
+  background: linear-gradient(to top, #EF4E78, #824eef);
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1; }

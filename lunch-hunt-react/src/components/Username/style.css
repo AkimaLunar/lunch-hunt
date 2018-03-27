@@ -1,0 +1,7 @@
+.username {
+  font-weight: 900;
+  margin: 0; }
+  .username__light {
+    color: rgba(255, 255, 255, 0.75); }
+  .username__dark {
+    color: #8e8c99; }

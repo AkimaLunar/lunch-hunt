@@ -1,0 +1,24 @@
+@import './transitions';
+@import './typography';
+
+%input {
+  padding: 0 0 0 .5rem;
+  border: none;
+  background-color: rgba(255,255,255,.15);
+  color: $color-primary;
+  transition: $base-transition;
+  height: 3.8rem;
+
+  &:focus {
+    background-color: rgba(255,255,255,.75);
+  }
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+%label {
+  color: rgba(255,255,255,.75);
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+}

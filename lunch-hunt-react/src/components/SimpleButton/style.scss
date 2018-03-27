@@ -1,0 +1,61 @@
+@import '../../styles/_borders';
+@import '../../styles/_colors';
+@import '../../styles/transitions';
+@import '../../styles/typography';
+
+.button {
+  border-radius: $base-border-radius;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  padding: $base-spacing;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &__light {
+    color: #fff;
+    background-color: transparentize(#fff, 0.85);
+    &:hover,
+    &:focus {
+      background-color: transparentize(#fff, 0.65);
+      color: #fff;
+    }
+  }
+  &__dark {
+    color: #fff;
+    background-color: $color-primary;
+    &:hover,
+    &:focus {
+      background-color: lighten($color-primary, 10%);
+    }
+  }
+  &__alt {
+    color: #fff;
+    background-color: $color-alt;
+    &:hover,
+    &:focus {
+      background-color: lighten($color-alt, 10%);
+    }
+  }
+  &__transparent {
+    color: #fff;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      background-color: transparentize(#fff, 0.65);
+    }
+  }
+  &__disabled {
+    cursor: not-allowed;
+    background-color: transparentize($color-medium-grey, 0.25);
+  }
+}

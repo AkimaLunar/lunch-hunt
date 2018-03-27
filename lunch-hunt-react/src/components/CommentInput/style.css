@@ -1,0 +1,23 @@
+.commentInput__input {
+  padding: 0 0 0 .5rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #5e05b7;
+  transition: all 150ms ease;
+  height: 3.8rem; }
+  .commentInput__input:focus {
+    background-color: rgba(255, 255, 255, 0.75); }
+  .commentInput__input::placeholder {
+    color: #fff; }
+
+.commentInput {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem; }
+  .commentInput__input {
+    flex: 5;
+    margin-right: .5rem; }
+  .commentInput__text {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 2rem;
+    text-align: center; }

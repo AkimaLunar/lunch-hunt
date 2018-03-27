@@ -1,0 +1,56 @@
+@import '../../styles/_borders';
+@import '../../styles/_colors';
+@import '../../styles/forms';
+@import '../../styles/_grid';
+
+.postLink {
+  background-color: $color-primary;
+  padding: $container-padding;
+  @media screen and (min-height: 460px) {
+    height: 100%;
+  }
+
+  &__form {
+    padding-bottom: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media screen and (min-width: $container-width) {
+      justify-content: center;
+      width: $container-width;
+      margin: 0 auto;
+    }
+    button {
+      margin-top: 1rem;
+    }
+  }
+  &__heading {
+    font-size: 3rem;
+    line-height: 1;
+    color: $color-light;
+  }
+  &__heading,
+  &__description {
+    color: transparentize($color-light, .15);
+  }
+  &__label {
+    margin: .5rem 0;
+    @extend %label;
+  }
+  
+  &__input {
+    margin: .5rem 0;
+    min-height: 1rem;
+    @extend %input;
+  }
+  &__buttonGroup {
+    display: flex;
+    flex-direction: row;
+
+    & button.button__alt {
+      flex-grow: 2;
+      margin-left: 1rem;
+    }
+  }
+}

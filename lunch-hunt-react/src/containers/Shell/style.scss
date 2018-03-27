@@ -1,0 +1,10 @@
+@import '../../styles/_grid';
+
+.shell {
+  @extend %container;
+  min-height: 100vh;
+
+  &__wrapper {
+    position: relative;
+  }
+}
